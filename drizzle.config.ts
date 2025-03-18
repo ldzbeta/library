@@ -4,7 +4,11 @@ import { config } from "dotenv";
 config({ path: ".env.local" });
 import { defineConfig } from "drizzle-kit";
 
+<<<<<<< HEAD
 console.log("DATABASE_URL:", process.env.DATABASE_URL);
+=======
+//console.log("DATABASE_URL:", process.env.DATABASE_URL);
+>>>>>>> 6a9dc7a (3/18/25)
 
 export default defineConfig({
   schema: "./database/schema.ts",
