@@ -1,8 +1,5 @@
 import React, { ReactNode } from "react";
 import Image from "next/image";
-<<<<<<< HEAD
-const layout = ({ children }: { children: ReactNode }) => {
-=======
 import { auth } from "@/auth";
 import { redirect } from "next/navigation";
 
@@ -11,7 +8,6 @@ const layout = async ({ children }: { children: ReactNode }) => {
   if (session) {
     redirect("/");
   }
->>>>>>> 6a9dc7a (3/18/25)
   return (
     <main className="auth-container">
       <section className="auth-form">
