@@ -13,7 +13,6 @@ const layout = async ({children }: {children: ReactNode}) => {// to specify to t
                 <div className="mt-20 pb-201">{children}</div>
         </div>
     </main>
-
   )
 }
 
