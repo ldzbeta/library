@@ -1,11 +1,11 @@
 "use client";
 
-import AuthForm from "@/components/ui/AuthForm";
-import { signInWithCredentials } from "@/lib/actions/auth";
-import { signInSchema } from "@/lib/validations";
 import React from "react";
+import AuthForm from "@/components/AuthForm";
+import { signInSchema } from "@/lib/validations";
+import { signInWithCredentials } from "@/lib/actions/auth";
 
-const page = () => (
+const Page = () => (
   <AuthForm
     type="SIGN_IN"
     schema={signInSchema}
@@ -17,4 +17,4 @@ const page = () => (
   />
 );
 
-export default page;
+export default Page;

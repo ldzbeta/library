@@ -3,7 +3,7 @@ import { cn, getInitials } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/avatar";
 import { Session } from "next-auth";
 
 // in the ui folder we will add shadcn components where inside the components folder we will add our components

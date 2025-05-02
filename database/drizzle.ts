@@ -6,8 +6,8 @@ import { drizzle } from "drizzle-orm/neon-http";
 import { neon } from "@neondatabase/serverless";
 import config from "@/lib/config";
 
-//console.log("Database URL:", config.env.databaseUrl); // Debugging
+// console.log("Database URL:", config.env.databaseUrl); // Debugging
 
 const sql = neon(config.env.databaseUrl); // Ensure this loads the correct URL
-export const db = drizzle(sql);
 
+export const db = drizzle({ client: sql, casing: "snake_case" });

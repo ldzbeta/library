@@ -3,7 +3,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import { ReactNode } from "react"; //ReactNode is a type provided by React in TypeScript. It represents anything that can be rendered inside a React component (e.g., strings, numbers, JSX, arrays, etc.).
 import {SessionProvider} from "next-auth/react"
-import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "@/components/toaster";
 import { auth } from "@/auth";
 
 const ibmPlexSans = localFont({ 
