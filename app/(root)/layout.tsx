@@ -29,6 +29,7 @@ const Layout = async ({ children }: { children: ReactNode }) => {
       .set({ lastActivityDate: new Date().toISOString().slice(0, 10) })
       .where(eq(users.id, session?.user?.id));
   });
+  // after function to use save last activity date to send email when user become inactive for some days
 
   return (
     <main className="root-container">
